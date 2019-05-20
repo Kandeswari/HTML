@@ -1,0 +1,88 @@
+.Videobackground{
+
+    position: fixed;
+    right:0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.logo{
+
+    width: 350px;
+    height: 150px;
+    float:left;
+    margin-left:5px;
+    margin-top: 5px;
+
+}
+
+.menucontainer ul li{
+display: inline;
+margin-right: 20px;
+
+}
+.menucontainer ul li:hover{
+    background-color: aquamarine;
+    padding: 5px;
+    border-radius: 10px;
+    
+    }
+.menu{
+
+    float:right
+}
+.messagecontainer{
+
+    position: absolute;
+    top:40%;
+    left:10%;
+    width: 80%;
+}
+.button{
+display: inline-block;
+text-decoration: none;
+font-size : 20px;
+background-color: aqua;
+border-radius: 15px;
+margin-top: 30px;
+height:50px;
+width: 150px;
+
+}
+.button:hover{
+   color:greenyellow;
+   transition: all 0.3s ease-in-out;
+   cursor: pointer;
+
+    }
+
+.buttoncontainer{
+    position: absolute;
+}
+header{
+
+    background: linear-gradient(to right,blue,pink);
+    z-index:1;
+}
+
+.eachitem{
+    display: inline;
+    color:floralwhite;
+    font-size: 250%;
+    margin-right: 50px;
+    cursor: pointer;
+}
+.eachitem:hover{
+
+    color:mediumslateblue;
+    border-bottom: 2px solid mediumslateblue;
+    font-weight: bold;
+    transition: all 0.2s ease-in;
+    padding: 10px;
+
+
+}

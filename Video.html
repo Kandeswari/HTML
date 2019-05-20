@@ -1,0 +1,44 @@
+<html>
+    <head>Video Demo</head>
+    <body>
+        <h1>Video Session</h1>
+        <video id="myvideo" width="300" autoplay controls loop muted>
+            <source src="SampleVideo_1280x720_5mb.mp4">
+            <source src="SampleVideo_1280x720_5mb.avi">
+            <source src="SampleVideo_1280x720_5mb.ogg">
+               
+        </video>
+        <br/>
+        <button id="playid" onclick="VideoPlay()" disabled>Play</button>
+        <button id="pauseid" onclick="VideoPause()">Pause</button>
+        <br/>
+        <iframe src="https://www.youtube.com/embed/uXDT6Po7-Hc" frameborder="0"></iframe>
+        <audio controls autoplay loop>
+            <source src="SampleAudio_0.4mb.mp3" type="audio/mp3">
+            <source src="SampleAudio_0.4mb.ogg" type="audio/ogg">
+        </audio>
+        <script>
+            var videoref = document.getElementById("myvideo")
+            var playref = document.getElementById("playid")
+            var pauseref = document.getElementById("pauseid")
+
+            var VideoPlay = function()
+            {
+                console.log("Play video")
+                videoref.play()
+                playref.disabled = true
+                pauseref.disabled = false
+            }
+            var VideoPause = function()
+            {
+                console.log("pause video")
+                videoref.pause()
+                pauseref.disabled=true
+                playref.disabled = false
+            }
+            
+        </script>
+
+        
+    </body>
+</html>

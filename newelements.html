@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Html5 New Form Elements</title>
+</head>
+<body>
+    <h3>New Form Elements</h3>
+    <form>
+<fieldset>
+    <legend>Personal Details</legend>
+    <div>
+        <label>Name</label>
+        <input type="text" required pattern="[A-Za-z]{4,10}">
+    </div>
+    <br>
+    <div>
+        <label for="">DOB</label>
+        <input type="date" min="2019-05-06" step="2" required>
+    </div>
+    <br>
+   <div>
+    <label>Age</label>
+    <input type="number" min="18" max="31" step="5" required>
+   </div>
+   <br>
+   <div>
+    <label>Email</label>
+    <input type="email" >
+   </div>
+   <br>
+   <div>
+    <label>website</label>
+    <input type="url" >
+   </div>
+    
+</fieldset>
+<fieldset>
+    <legend>Skills</legend>
+    <div>
+        <label>Rate HTML5 Skill</label>
+        <input id="rangeid" type="range" min="0" max="20" step="2" oninput="rangeselect.value = rangeid.value">
+        <input id="rangeselect" type="number" >
+    </div>
+    <br>
+    <div>
+        <input type="color">
+        </div>
+</fieldset>
+<fieldset>
+    <legend>Mics</legend>
+    <div>
+        <label for ="">SourceList </label>
+        <input type="text" list="source">
+        <datalist id="source">
+<option value="test" source1></option>
+<option value="source2" source2></option>
+<option value="source3" source3></option>
+
+        </datalist>
+    </div>
+    <br>
+    <div>
+            <progress value="22" max="100">
+                </progress>
+    </div>
+    
+</fieldset>
+<br>
+<div>
+        
+</div>
+<button type="submit">Submit</button>
+    </form>
+</body>
+</html>

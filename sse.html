@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Server sent events...</title>
+</head>
+<body>
+ <h1>SSE</h1>   
+ <div id="information"></div>
+ this will come from Server even when client is passive!
+ <script>
+     var ssesource = new EventSource("Rest end poit has to be called")
+     ssesource.onmessage = function(event)
+     {
+console.event(console.log(event)
+)
+
+     }
+ </script>
+</body>
+</html>

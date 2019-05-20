@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Geolocation</title>
+</head>
+<body>
+    <h3>Geolocation</h3>
+    <button onclick="getcurrentlocation()">get current Location</button>
+    <br>
+
+    <script>
+        var getcurrentlocation = function(){
+            navigator.geolocation.getCurrentPosition(successposition)
+
+        }
+
+        var successposition = function(){
+
+            console.log(location)
+            var lat = location.coords.latitude
+            var long = location.coords.longitude
+            console.log("Lat:" + lat + "Long:" + long)
+            document.getElementById("location").innerHTML="Lat:" +lat +"Lon:" + long
+        
+        }
+
+        var updatedLocation = function(location){
+
+            console.log(location)
+            var lat = location.coords.latitude
+            var long = location.coords.longitude
+            console.log("Lat:" + lat + "Long:" + long)
+            document.getElementById("location").innerHTML="Lat:" +lat +"Lon:" + long
+
+        }
+        var update = navigator.geolocation.watchPosition(updatedLocation)
+        
+    </script>
+</body>
+</html>
